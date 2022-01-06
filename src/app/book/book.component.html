@@ -1,0 +1,49 @@
+<div class="col-md-6 offset-md-3">
+<h3> Add your details</h3>
+<form (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+        <label>ID</label>
+        <input type="text" class="form-control" id="id"
+        [(ngModel)]="user.id" name="id">
+    </div>
+
+    <div class="form-group">
+        <label>No Of Tickets</label>
+        <input type="number" class="form-control" id="nooftickets"
+        [(ngModel)]="user.noOfTickets" name="nooftickets">
+    </div>
+
+    <div class="form-group">
+        <label>Adults</label>
+        <input type="number" class="form-control" id="adults"
+        [(ngModel)]="user.adults" name="adults">
+    </div>
+
+    <div class="form-group">
+        <label>Age</label>
+        <input type="number" class="form-control" id="age"
+        [(ngModel)]="user.age" name="age">
+    </div>
+
+    <div class="form-group">
+        <label>Childrens</label>
+        <input type="number" class="form-control" id="childrens"
+        [(ngModel)]="user.childrens" name="childrens">
+    </div>
+
+    <div class="form-group">
+        <label>Start Station</label>
+        <input type="text" class="form-control" id="startStation"
+        [(ngModel)]="user.startStation" name="startStation">
+    </div>
+
+    <div class="form-group">
+        <label>End Station</label>
+        <input type="text" class="form-control" id="endStation"
+        [(ngModel)]="user.endStation" name="endStation">
+    </div>
+
+    <button class="btn btn-success" type="submit">Book</button>
+</form>
+</div> 

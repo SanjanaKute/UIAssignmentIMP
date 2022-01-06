@@ -1,0 +1,20 @@
+<h2>Available Train List</h2>
+
+<table class= "table table-striped">
+    <thead>
+        <tr>
+            <th>TrainId</th>
+            <th>TrainName</th>
+            <th>StartStation</th>
+            <th>EndStation</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let train of trains">
+            <td> {{ train.trainid }}</td>
+            <td> {{ train.trainName }}</td>
+            <td> {{ train.startStation }}</td>
+            <td> {{ train.endStation }}</td>
+        </tr>
+    </tbody>
+</table>
